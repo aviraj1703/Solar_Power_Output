@@ -1,0 +1,64 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>
+            Prediction
+        </title>
+		<style>
+			h1{
+				text-align : center;
+				text-decoration : underline;
+				background-color : #5E5E5E;
+				color : white;
+				font-weight : bold;
+				font-family : courier new;
+			  }
+			body{
+					background-image : url("https://g.foolcdn.com/editorial/images/464328/solar-panels-with-mountains-in-background.jpg");
+					background-repeat : no-repeat;
+					background-size : 100% 100%;
+				}
+			div{
+				 font-size : 40 px;
+				 text-align : center;
+			   }
+			.result-p{
+						font-family : new roman;
+						color : green;
+						font-size : 30px;
+						background : khaki ;
+					 }
+			.myButton  {
+						 font-family : new roman;
+						 color : white;
+						 font-size : 25px;
+						 background : black;
+						 border-radius : 60%;
+					   }
+			@media (max-width : 840px){
+										.result-p{
+													font-family : new roman;
+													color : green;
+													font-size : 30px;
+													background : khaki ;
+												 }
+										.myButton  {
+													 font-family : new roman;
+													 color : white;
+													 font-size : 25px;
+													 background : black;
+													 border-radius : 60%;
+												   }
+									  }
+		</style>
+    </head>
+    <body>
+		<br/><br/>
+		<h1> Here's your result </h1><br/><br/>
+        <div>
+            <h3 class='result-p'>The final predicted units for a month are : {{ daily_unit }}</h3>
+            <h3 class='result-p'>The final saved amount in a month is : {{ money_saved }}</h3>
+			<a  href = "index.html" ><input type="submit" class="myButton" value="Retry"></a>
+				<br/><br/>
+        </div>
+    </body>
+</html>
