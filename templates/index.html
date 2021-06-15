@@ -25,15 +25,21 @@
 						 color : green;
 						 font-size : 20px;
 						 background : khaki ;
+						 padding : 8px;
+						 border-color : red;
 					   }
 			.myButton  {
 						 font-family : new roman;
 						 color : white;
 						 font-size : 20px;
 						 background : black;
-						 border-radius : 60%;
+						 border-radius : 10px;
 					   }
-			@media (max-width : 840px){
+			@media (max-width : 800px){
+										div{
+												font-size : 60px;
+												height : 100%
+										   }
 										.form-input{
 													 font-family : new roman;
 													 color : green;
@@ -45,17 +51,17 @@
 													 color : white;
 													 font-size : 20px;
 													 background : black;
-													 border-radius : 60%;
+													 border-radius : 10px;
 												   }
 									  }
 		</style>
     </head>
     <body>
-	    <script>
+		<script>
 			alert("A solar panel, or photo-voltaic (PV) module, is an assembly of photo-voltaic cells mounted in a framework for installation. Solar panels use sunlight as a source of energy to generate direct current electricity. A collection of PV modules is called a PV panel, and a system of panels is an array. Arrays of a photovoltaic system supply solar electricity to electrical equipment.");
 		</script>
 		<br/><br/>
-		<h1> Solar Panel Output Calculator </h1><br/><br/>
+		<h1> Solar Penal Output Calculator </h1><br/><br/>
         <div>
             <form action="{{ url_for('predict') }}" method="POST" align = "center">
                 <input class="form-input" type="text" name="watt" required="required" placeholder="Enter watts">
